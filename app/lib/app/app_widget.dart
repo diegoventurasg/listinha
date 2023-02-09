@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'home/home_page.dart';
 import 'shared/themes/themes.dart';
 
 class AppWidget extends StatelessWidget {
@@ -13,14 +14,7 @@ class AppWidget extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: lightTheme,
       darkTheme: darkTheme,
-      home: Scaffold(
-        appBar: AppBar(),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: const Icon(Icons.add),
-        ),
-        body: Container(),
-      ),
+      home: const HomePage(),
     );
   }
 }
