@@ -22,7 +22,9 @@ class HomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton.extended(
         icon: const Icon(Icons.edit),
         label: const Text('Nova lista'),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pushNamed('./edit');
+        },
       ),
       body: Center(
         child: Column(
